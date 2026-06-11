@@ -1,0 +1,31 @@
+{
+  "name": "voice-agent-appointment-scheduler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Voice agent for truck driver appointment scheduling - monorepo",
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "dashboard": "pnpm --filter dashboard dev",
+    "api": "pnpm --filter api dev",
+    "agent": "pnpm --filter voice-agent dev"
+  },
+  "devDependencies": {
+    "turbo": "^1.11.2",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
