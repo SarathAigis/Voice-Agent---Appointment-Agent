@@ -1,0 +1,65 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      prettier:
+        specifier: ^3.1.1
+        version: 3.1.1
+      turbo:
+        specifier: ^1.11.2
+        version: 1.11.2
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+
+  packages/dashboard:
+    dependencies: {}
+    devDependencies: {}
+
+  packages/shared:
+    dependencies: {}
+    devDependencies:
+      '@types/node':
+        specifier: ^20
+        version: 20.11.5
+      typescript:
+        specifier: ^5
+        version: 5.3.3
+      vitest:
+        specifier: ^1.2.0
+        version: 1.2.0
+
+packages:
+
+  /@types/node@20.11.5:
+    resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURJjjKN8+ZNQYR5VMKN63AoNkKbpnGbxw==}
+    dev: true
+
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UUkD+SWncMOhw59GTvGqIL8B6YqDXLHvkNYWeazQk+DGSgmSOqHYLKmR8tKfR1J3Ek9hSvR9p8EUwHUQYMfQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
+  /turbo@1.11.2:
+    resolution: {integrity: sha512-7XcQPYyLk3I3xE4x3H9qNpJcCGMPdJQjXoQiqvXDkY2EeqH8FvXjP6qD0sZrJ7EQqCEH6C8dWvLqH8AKcNZXCg==}
+    hasBin: true
+    dev: true
+
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
+
+  /vitest@1.2.0:
+    resolution: {integrity: sha512-Ixs6NHhqtZqNBqZLdNfUfzK5vY/HLV3FLlM9Pwj6JdLHa7G9LKT8n7K8tLBGTQrNq6qFRuJqLVLqwQQYYKcGNA==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    hasBin: true
+    dev: true
